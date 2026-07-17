@@ -248,3 +248,52 @@ ul{list-style:none;}
   .hero-arrow{display:none;}
   .page-hero h1{font-size:26px;}
 }
+
+/* ===== Apple-inspired visual refinement: presentation only ===== */
+:root{
+  --material-light:rgba(255,255,255,.78);
+  --material-line:rgba(255,255,255,.5);
+  --surface-soft:#f7fbff;
+  --shadow-soft:0 12px 30px rgba(0,48,105,.10);
+  --shadow-lift:0 18px 42px rgba(0,72,150,.15);
+}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;letter-spacing:0;}
+.logo-text .cn,.section-head h2,.about-text h2,.page-hero h1,.cta-band h2{letter-spacing:-.025em;line-height:1.18;font-optical-sizing:auto;}
+.topbar,.kicker,.section-head .kicker,.about-text .kicker,.crumb{letter-spacing:.075em;}
+.header{background:var(--material-light);backdrop-filter:blur(18px) saturate(145%);-webkit-backdrop-filter:blur(18px) saturate(145%);border-bottom-color:transparent;box-shadow:0 8px 24px rgba(0,32,91,.08);}
+.header::after{content:"";position:absolute;inset:auto 0 0;height:1px;background:linear-gradient(90deg,transparent,rgba(0,48,135,.14),transparent);pointer-events:none;}
+.nav>li>a{border-bottom-width:2px;transition:color 180ms ease,background-color 180ms ease,border-color 180ms ease;}
+.nav>li>a:hover{background:rgba(0,114,206,.06);}
+.btn{border-radius:999px;transition:transform 160ms ease,background-color 180ms ease,box-shadow 180ms ease;}
+.btn-primary{box-shadow:0 8px 18px rgba(0,85,184,.22);}.btn-primary:hover{box-shadow:0 11px 24px rgba(0,85,184,.28);}
+.btn:active{transform:scale(.98);}
+a:focus-visible,button:focus-visible{outline:3px solid rgba(0,114,206,.42);outline-offset:3px;}
+.hero,.page-hero,.cta-band{isolation:isolate;}
+.hero::before,.page-hero::before,.cta-band::before{content:"";position:absolute;z-index:-1;width:42vw;height:42vw;min-width:320px;min-height:320px;right:-13vw;top:-25vw;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.18),transparent 67%);pointer-events:none;}
+.page-hero{background:linear-gradient(135deg,rgba(0,32,91,.96),rgba(0,85,184,.90));backdrop-filter:blur(12px) saturate(120%);-webkit-backdrop-filter:blur(12px) saturate(120%);border-radius:0 0 28px 28px;box-shadow:0 14px 34px rgba(0,48,135,.13);}
+.page-hero::after{opacity:.55;}.page-hero .sub{line-height:1.75;}
+.section{padding-block:82px;}.section-alt{background:linear-gradient(180deg,#f7fbff,#eef7ff);}
+.section-head{margin-bottom:52px;}.section-head p,.about-text p,.detail-main p{line-height:1.85;}
+.card,.brand,.service,.news,.step,.news-article,.side-card{border-color:rgba(0,85,184,.11);border-radius:20px;box-shadow:var(--shadow-soft);}
+.card,.brand,.service,.news{transition:transform 180ms ease,box-shadow 180ms ease,border-color 180ms ease;}
+.card:hover,.brand:hover,.service:hover,.news:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift);border-color:rgba(0,114,206,.28);}
+.card-visual,.detail-visual{background:linear-gradient(145deg,#f9fcff,#e1f1ff);}.card-body{padding:24px 24px 28px;}
+.industry{border-radius:24px;box-shadow:var(--shadow-soft);}.industry:hover{transform:translateY(-4px);box-shadow:var(--shadow-lift);}
+.about-visual,.contact-map{border-radius:24px;}.stats .stat{border-radius:16px;background:linear-gradient(145deg,#f5fbff,#e7f4ff);}
+.cta-band{background:linear-gradient(125deg,rgba(0,32,91,.96),rgba(0,100,202,.90));backdrop-filter:blur(12px) saturate(120%);-webkit-backdrop-filter:blur(12px) saturate(120%);}
+.footer{background:linear-gradient(150deg,#001b4c,#002a74);}.footer-main{padding-top:64px;}
+#toTop{box-shadow:0 10px 24px rgba(0,85,184,.32);}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto;}
+  *,*::before,*::after{transition-duration:1ms!important;animation-duration:1ms!important;animation-iteration-count:1!important;}
+  .card:hover,.brand:hover,.service:hover,.news:hover,.industry:hover,.btn:active{transform:none;}
+}
+@media (prefers-reduced-transparency:reduce){
+  .header,.page-hero,.cta-band{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none;}
+  .page-hero,.cta-band{background:var(--blue-800);}
+}
+@media (prefers-contrast:more){
+  .header,.page-hero,.cta-band{border:1px solid currentColor;}
+  .card,.brand,.service,.news,.step{border-color:currentColor;box-shadow:none;}
+  a:focus-visible,button:focus-visible{outline-color:currentColor;}
+}
