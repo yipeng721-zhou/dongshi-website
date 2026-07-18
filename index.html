@@ -6,215 +6,10 @@
 <title>上海东时仪器科技有限公司 - 溶出仪 | 激光粒度仪 | 实验室通用仪器 | 化学合成仪器</title>
 <meta name="description" content="上海东时仪器科技有限公司致力于为医药、化工、生物等行业提供高品质的实验室仪器设备与优质的售前售后技术支持。代理美国DISTEK溶出仪、法国CILAS激光粒度仪、麦克微尔便携式尘埃粒子计数器等品牌。">
 <meta name="keywords" content="溶出仪,激光粒度仪,尘埃粒子计数器,实验室通用仪器,化学合成仪器,DISTEK,CILAS,麦克微尔,MicronView,上海东时仪器">
-<style>
-:root{
-  --blue-900:#00205b;
-  --blue-800:#003087;
-  --blue-600:#0055b8;
-  --blue-500:#0072ce;
-  --blue-100:#e6f0fa;
-  --blue-50:#f2f7fc;
-  --ink:#1a2332;
-  --gray-700:#4a5568;
-  --gray-500:#718096;
-  --gray-200:#e2e8f0;
-  --gray-100:#f5f7fa;
-  --white:#ffffff;
-  --accent:#00a3e0;
-  --max:1200px;
-}
-*{margin:0;padding:0;box-sizing:border-box;}
-html{scroll-behavior:smooth;}
-body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;color:var(--ink);background:var(--white);line-height:1.7;font-size:16px;}
-a{color:inherit;text-decoration:none;}
-img{max-width:100%;display:block;}
-ul{list-style:none;}
-.container{max-width:var(--max);margin:0 auto;padding:0 24px;}
-
-/* ===== Top utility bar ===== */
-.topbar{background:var(--blue-900);color:#cfe0f5;font-size:13px;}
-.topbar .container{display:flex;justify-content:space-between;align-items:center;height:36px;}
-.topbar a{color:#cfe0f5;transition:color .2s;}
-.topbar a:hover{color:#fff;}
-.topbar .links{display:flex;gap:20px;}
-.topbar .phone{display:flex;align-items:center;gap:6px;}
-
-/* ===== Header / Nav ===== */
-.header{background:var(--white);border-bottom:1px solid var(--gray-200);position:sticky;top:0;z-index:100;box-shadow:0 1px 8px rgba(0,32,91,.06);}
-.header .container{display:flex;align-items:center;justify-content:space-between;height:76px;}
-.logo{display:flex;align-items:center;gap:12px;}
-.logo-mark{width:44px;height:44px;flex:none;}
-.logo-text{line-height:1.25;}
-.logo-text .cn{font-size:17.5px;font-weight:700;color:var(--blue-800);letter-spacing:.5px;white-space:nowrap;}
-.logo-text .en{font-size:9.5px;color:var(--gray-500);letter-spacing:.2px;white-space:nowrap;}
-.nav{display:flex;align-items:center;gap:0;}
-.nav>li>a{display:block;padding:26px 13px;font-size:15px;font-weight:500;color:var(--ink);border-bottom:3px solid transparent;transition:all .2s;white-space:nowrap;}
-.nav>li>a:hover,.nav>li>a.active{color:var(--blue-600);border-bottom-color:var(--blue-600);}
-.nav-cta{margin-left:10px;}
-.nav-cta .btn{white-space:nowrap;padding:9px 18px;}
-@media (max-width:1150px){.logo-text .en{display:none;}.nav>li>a{padding:26px 10px;font-size:14.5px;}}
-.btn{display:inline-block;padding:10px 24px;border-radius:4px;font-size:14.5px;font-weight:600;cursor:pointer;transition:all .2s;border:none;}
-.btn-primary{background:var(--blue-600);color:#fff;}
-.btn-primary:hover{background:var(--blue-800);}
-.btn-outline{border:1.5px solid #fff;color:#fff;background:transparent;}
-.btn-outline:hover{background:rgba(255,255,255,.15);}
-.hamburger{display:none;background:none;border:none;cursor:pointer;padding:8px;}
-.hamburger span{display:block;width:24px;height:2.5px;background:var(--blue-800);margin:5px 0;border-radius:2px;transition:.3s;}
-
-/* ===== Hero carousel ===== */
-.hero{position:relative;overflow:hidden;color:#fff;}
-.slides{display:flex;transition:transform .6s ease;}
-.slide{min-width:100%;min-height:480px;display:flex;align-items:center;position:relative;padding:70px 0;}
-.slide-1{background:linear-gradient(115deg,#00205b 0%,#003087 45%,#0055b8 100%);}
-.slide-2{background:linear-gradient(115deg,#001a4d 0%,#00318f 55%,#0072ce 100%);}
-.slide-3{background:linear-gradient(115deg,#002b6b 0%,#004aa5 50%,#00a3e0 100%);}
-.slide::after{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 400 400'%3E%3Cg fill='none' stroke='rgba(255,255,255,0.06)' stroke-width='1.5'%3E%3Ccircle cx='200' cy='200' r='80'/%3E%3Ccircle cx='200' cy='200' r='140'/%3E%3Ccircle cx='200' cy='200' r='190'/%3E%3C/g%3E%3C/svg%3E") right -60px center no-repeat;pointer-events:none;}
-.slide .container{position:relative;z-index:2;}
-.slide .eyebrow{font-size:14px;letter-spacing:3px;color:#8fc4f0;font-weight:600;margin-bottom:14px;}
-.slide h1,.slide h2{font-size:40px;font-weight:700;line-height:1.35;margin-bottom:18px;max-width:640px;}
-.slide p{font-size:17px;color:#d5e5f7;max-width:560px;margin-bottom:30px;}
-.slide .actions{display:flex;gap:14px;flex-wrap:wrap;}
-.hero-dots{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);display:flex;gap:10px;z-index:5;}
-.hero-dots button{width:34px;height:4px;border-radius:2px;border:none;background:rgba(255,255,255,.35);cursor:pointer;transition:background .3s;}
-.hero-dots button.on{background:#fff;}
-.hero-arrow{position:absolute;top:50%;transform:translateY(-50%);z-index:5;background:rgba(255,255,255,.12);border:none;color:#fff;width:44px;height:44px;border-radius:50%;font-size:20px;cursor:pointer;transition:background .2s;}
-.hero-arrow:hover{background:rgba(255,255,255,.28);}
-.hero-arrow.prev{left:18px;}
-.hero-arrow.next{right:18px;}
-
-/* ===== Section base ===== */
-.section{padding:76px 0;}
-.section-alt{background:var(--gray-100);}
-.section-head{text-align:center;max-width:720px;margin:0 auto 48px;}
-.section-head .kicker{font-size:13.5px;letter-spacing:3px;color:var(--blue-500);font-weight:700;margin-bottom:10px;}
-.section-head h2{font-size:32px;color:var(--blue-900);font-weight:700;margin-bottom:14px;}
-.section-head p{color:var(--gray-700);font-size:16px;}
-
-/* ===== Product cards ===== */
-.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-.card{background:#fff;border:1px solid var(--gray-200);border-radius:8px;overflow:hidden;transition:all .25s;display:flex;flex-direction:column;}
-.card:hover{transform:translateY(-6px);box-shadow:0 14px 34px rgba(0,48,135,.14);border-color:var(--blue-500);}
-.card-visual{height:150px;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--blue-50),var(--blue-100));}
-.card-visual svg{width:72px;height:72px;}
-.card-body{padding:22px 22px 26px;flex:1;display:flex;flex-direction:column;}
-.card-body h3{font-size:18px;color:var(--blue-900);margin-bottom:10px;font-weight:700;}
-.card-body p{font-size:14px;color:var(--gray-700);flex:1;margin-bottom:16px;}
-.card-link{font-size:14px;font-weight:600;color:var(--blue-600);}
-.card-link::after{content:" →";transition:margin .2s;}
-.card:hover .card-link::after{margin-left:4px;}
-
-/* ===== Solutions / industries ===== */
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-.industry{position:relative;border-radius:8px;overflow:hidden;color:#fff;padding:150px 28px 28px;min-height:260px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .25s;}
-.industry:hover{transform:translateY(-6px);}
-.ind-pharma{background:linear-gradient(160deg,#003087 10%,#0072ce 90%);}
-.ind-chem{background:linear-gradient(160deg,#00205b 10%,#0055b8 90%);}
-.ind-bio{background:linear-gradient(160deg,#004aa5 10%,#00a3e0 90%);}
-.industry h3{font-size:21px;margin-bottom:8px;font-weight:700;}
-.industry p{font-size:14px;color:#d5e5f7;}
-.industry .icon{position:absolute;top:26px;left:28px;width:52px;height:52px;opacity:.95;}
-
-/* ===== Brands ===== */
-.brands{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-.brand{background:#fff;border:1px solid var(--gray-200);border-radius:8px;padding:30px 24px;text-align:center;transition:all .25s;}
-.brand:hover{box-shadow:0 10px 26px rgba(0,48,135,.12);border-color:var(--blue-500);}
-.brand .name{font-size:20px;font-weight:800;color:var(--blue-800);letter-spacing:1px;margin-bottom:6px;}
-.brand .from{font-size:13px;color:var(--gray-500);margin-bottom:10px;}
-.brand p{font-size:13.5px;color:var(--gray-700);}
-
-/* ===== About ===== */
-.about-wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;}
-.about-text h2{font-size:30px;color:var(--blue-900);margin-bottom:8px;}
-.about-text .kicker{font-size:13.5px;letter-spacing:3px;color:var(--blue-500);font-weight:700;margin-bottom:10px;}
-.about-text p{color:var(--gray-700);margin-bottom:16px;}
-.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px;}
-.stat{background:var(--blue-50);border-radius:8px;padding:20px 16px;text-align:center;}
-.stat .num{font-size:30px;font-weight:800;color:var(--blue-600);line-height:1.2;}
-.stat .num span{font-size:16px;font-weight:600;}
-.stat .label{font-size:13.5px;color:var(--gray-700);margin-top:4px;}
-.about-visual{background:linear-gradient(150deg,var(--blue-800),var(--blue-500));border-radius:10px;min-height:360px;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;}
-.about-visual svg{width:64%;height:auto;}
-
-/* ===== Services ===== */
-.services{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
-.service{text-align:center;padding:34px 22px;background:#fff;border-radius:8px;border:1px solid var(--gray-200);transition:all .25s;}
-.service:hover{box-shadow:0 10px 26px rgba(0,48,135,.12);}
-.service .ico{width:58px;height:58px;margin:0 auto 16px;background:var(--blue-100);border-radius:50%;display:flex;align-items:center;justify-content:center;}
-.service .ico svg{width:30px;height:30px;}
-.service h3{font-size:17px;color:var(--blue-900);margin-bottom:8px;}
-.service p{font-size:13.5px;color:var(--gray-700);}
-
-/* ===== News ===== */
-.news-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
-.news{background:#fff;border:1px solid var(--gray-200);border-radius:8px;padding:26px;transition:all .25s;}
-.news:hover{box-shadow:0 10px 26px rgba(0,48,135,.12);border-color:var(--blue-500);}
-.news .date{font-size:13px;color:var(--blue-500);font-weight:600;margin-bottom:10px;}
-.news h3{font-size:17px;color:var(--ink);margin-bottom:10px;line-height:1.5;}
-.news p{font-size:14px;color:var(--gray-700);}
-
-/* ===== CTA band ===== */
-.cta-band{background:linear-gradient(115deg,var(--blue-900),var(--blue-600));color:#fff;padding:56px 0;text-align:center;}
-.cta-band h2{font-size:28px;margin-bottom:12px;}
-.cta-band p{color:#d5e5f7;margin-bottom:26px;font-size:16px;}
-
-/* ===== Contact ===== */
-.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;}
-.contact-info h3{font-size:20px;color:var(--blue-900);margin-bottom:18px;}
-.contact-item{display:flex;gap:14px;margin-bottom:20px;align-items:flex-start;}
-.contact-item .ico{width:42px;height:42px;flex:none;background:var(--blue-100);border-radius:8px;display:flex;align-items:center;justify-content:center;}
-.contact-item .ico svg{width:22px;height:22px;}
-.contact-item .label{font-size:13px;color:var(--gray-500);}
-.contact-item .val{font-size:16px;font-weight:600;color:var(--ink);}
-.contact-map{background:linear-gradient(150deg,var(--blue-50),var(--blue-100));border:1px solid var(--gray-200);border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:40px;text-align:center;color:var(--gray-700);}
-.contact-map svg{width:64px;height:64px;margin-bottom:14px;}
-.contact-map .addr{font-weight:600;color:var(--blue-900);font-size:16px;margin-bottom:6px;}
-
-/* ===== Footer ===== */
-.footer{background:var(--blue-900);color:#a9c2e2;font-size:14px;}
-.footer-main{padding:56px 0 40px;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.3fr;gap:40px;}
-.footer h4{color:#fff;font-size:15.5px;margin-bottom:18px;font-weight:600;}
-.footer .flogo{display:flex;align-items:center;gap:10px;margin-bottom:16px;}
-.footer .flogo .cn{color:#fff;font-weight:700;font-size:17px;}
-.footer p{margin-bottom:8px;}
-.footer ul li{margin-bottom:10px;}
-.footer a:hover{color:#fff;}
-.footer-bottom{border-top:1px solid rgba(255,255,255,.14);padding:18px 0;font-size:13px;}
-.footer-bottom .container{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;}
-.footer-bottom a:hover{color:#fff;}
-
-/* ===== Back to top ===== */
-#toTop{position:fixed;right:26px;bottom:26px;width:44px;height:44px;border-radius:50%;background:var(--blue-600);color:#fff;border:none;font-size:18px;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .3s;z-index:90;box-shadow:0 6px 18px rgba(0,48,135,.35);}
-#toTop.show{opacity:1;pointer-events:auto;}
-
-/* ===== Responsive ===== */
-@media (max-width:1024px){
-  .grid-4,.brands,.services{grid-template-columns:repeat(2,1fr);}
-  .grid-3,.news-grid{grid-template-columns:1fr 1fr;}
-  .about-wrap,.contact-wrap{grid-template-columns:1fr;}
-  .footer-main{grid-template-columns:1fr 1fr;}
-  .slide h1,.slide h2{font-size:32px;}
-}
-@media (max-width:720px){
-  .nav{display:none;position:absolute;top:76px;left:0;right:0;background:#fff;flex-direction:column;gap:0;box-shadow:0 12px 24px rgba(0,32,91,.12);padding:8px 0 16px;}
-  .nav.open{display:flex;}
-  .nav>li{width:100%;}
-  .nav>li>a{padding:14px 24px;border-bottom:none;}
-  .nav-cta{margin:10px 24px 0;}
-  .hamburger{display:block;}
-  .topbar .links{display:none;}
-  .grid-4,.grid-3,.brands,.services,.news-grid{grid-template-columns:1fr;}
-  .footer-main{grid-template-columns:1fr;}
-  .slide h1,.slide h2{font-size:26px;}
-  .slide{min-height:420px;}
-  .stats{grid-template-columns:repeat(3,1fr);gap:10px;}
-  .section{padding:56px 0;}
-  .hero-arrow{display:none;}
-}
-</style>
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- ======= 顶部通栏 ======= -->
 <div class="topbar">
   <div class="container">
     <div class="phone">
@@ -222,16 +17,15 @@ ul{list-style:none;}
       服务热线：136 2186 2093
     </div>
     <div class="links">
-      <a href="#contact">索取报价</a>
-      <a href="#contact">联系我们</a>
+      <a href="contact.html">索取报价</a>
+      <a href="contact.html">联系我们</a>
     </div>
   </div>
 </div>
 
-<!-- ======= 主导航 ======= -->
 <header class="header">
   <div class="container">
-    <a class="logo" href="#top">
+    <a class="logo" href="index.html">
       <svg class="logo-mark" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
         <rect x="2" y="2" width="44" height="44" rx="9" fill="#003087"/>
         <path d="M14 33V15h7.5c5 0 8.5 3.6 8.5 9s-3.5 9-8.5 9H14zm4-3.4h3.3c2.8 0 4.6-2.2 4.6-5.6s-1.8-5.6-4.6-5.6H18v11.2z" fill="#fff"/>
@@ -244,22 +38,20 @@ ul{list-style:none;}
     </a>
     <nav>
       <ul class="nav" id="mainNav">
-        <li><a href="#top" class="active">首页</a></li>
-        <li><a href="#products">产品中心</a></li>
-        <li><a href="#solutions">行业应用</a></li>
-        <li><a href="#brands">合作品牌</a></li>
-        <li><a href="#services">服务支持</a></li>
-        <li><a href="#about">关于我们</a></li>
-        <li><a href="#news">新闻动态</a></li>
-        <li class="nav-cta"><a class="btn btn-primary" href="#contact">联系我们</a></li>
+        <li><a href="index.html" class="active">首页</a></li>
+        <li><a href="products.html">产品中心</a></li>
+        <li><a href="solutions.html">行业应用</a></li>
+        <li><a href="services.html">服务支持</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="news.html">新闻动态</a></li>
+        <li class="nav-cta"><a class="btn btn-primary" href="contact.html">联系我们</a></li>
       </ul>
     </nav>
     <button class="hamburger" id="hamburger" aria-label="菜单"><span></span><span></span><span></span></button>
   </div>
 </header>
 
-<!-- ======= Banner 轮播 ======= -->
-<section class="hero" id="top">
+<section class="hero">
   <div class="slides" id="slides">
     <div class="slide slide-1">
       <div class="container">
@@ -267,8 +59,8 @@ ul{list-style:none;}
         <h1>以精准仪器，赋能科学研究</h1>
         <p>东时仪器致力于为医药、化工、生物等行业提供更高品质的实验室仪器设备与更优质的售前售后技术支持。</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#products">浏览产品中心</a>
-          <a class="btn btn-outline" href="#contact">索取报价</a>
+          <a class="btn btn-primary" href="products.html">浏览产品中心</a>
+          <a class="btn btn-outline" href="contact.html">索取报价</a>
         </div>
       </div>
     </div>
@@ -278,7 +70,7 @@ ul{list-style:none;}
         <h2>携手全球一流品牌，服务中国实验室</h2>
         <p>深入合作美国 DISTEK、法国 CILAS、麦克微尔等多家优质品牌，并与国产品牌建立稳定合作，为研发与质量实验室提供全面选择。</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#brands">了解合作品牌</a>
+          <a class="btn btn-primary" href="about.html#brands">了解合作品牌</a>
         </div>
       </div>
     </div>
@@ -288,7 +80,7 @@ ul{list-style:none;}
         <h2>专业技术团队，全生命周期服务保障</h2>
         <p>从选型咨询、安装调试、操作培训到维修保养，提供覆盖仪器全生命周期的技术支持，让每一台仪器持续稳定运行。</p>
         <div class="actions">
-          <a class="btn btn-primary" href="#services">查看服务支持</a>
+          <a class="btn btn-primary" href="services.html">查看服务支持</a>
         </div>
       </div>
     </div>
@@ -298,8 +90,7 @@ ul{list-style:none;}
   <div class="hero-dots" id="dots"></div>
 </section>
 
-<!-- ======= 产品中心 ======= -->
-<section class="section" id="products">
+<section class="section">
   <div class="container">
     <div class="section-head">
       <div class="kicker">PRODUCTS</div>
@@ -307,7 +98,7 @@ ul{list-style:none;}
       <p>覆盖药物分析、粒度表征、实验室通用设备与化学合成四大领域，满足研发与质控实验室的多样化需求。</p>
     </div>
     <div class="grid-4">
-      <div class="card">
+      <a class="card" href="product-dissolution.html">
         <div class="card-visual">
           <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="10" y="14" width="52" height="40" rx="4" stroke="#0055b8" stroke-width="2.5"/>
@@ -320,11 +111,11 @@ ul{list-style:none;}
         </div>
         <div class="card-body">
           <h3>溶出仪</h3>
-          <p>代理美国 DISTEK 溶出仪，为片剂、胶囊等固体制剂提供符合药典要求的体外溶出度测试方案，广泛应用于药物研发与质量控制。</p>
+          <p>代理美国 DISTEK 溶出仪，为片剂、胶囊等固体制剂提供符合药典要求的体外溶出度测试方案。</p>
           <span class="card-link">了解详情</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="product-particle.html">
         <div class="card-visual">
           <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M12 36h14M46 36h14" stroke="#0055b8" stroke-width="2.5" stroke-linecap="round"/>
@@ -337,11 +128,11 @@ ul{list-style:none;}
         </div>
         <div class="card-body">
           <h3>激光粒度仪</h3>
-          <p>代理法国 CILAS 激光粒度仪，采用激光衍射技术精准测定颗粒粒径分布，服务制药、化工、新材料等行业的粒度表征需求。</p>
+          <p>代理法国 CILAS 激光粒度仪，采用激光衍射技术精准测定颗粒粒径分布，服务粒度表征需求。</p>
           <span class="card-link">了解详情</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="product-lab.html">
         <div class="card-visual">
           <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M28 12v18L16 52c-2 3.5.5 8 4.5 8h31c4 0 6.5-4.5 4.5-8L44 30V12" stroke="#0055b8" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -354,11 +145,11 @@ ul{list-style:none;}
         </div>
         <div class="card-body">
           <h3>实验室通用仪器</h3>
-          <p>提供麦克微尔便携式尘埃粒子计数器及分光光度计、天平、纯水系统、恒温设备等实验室仪器，为实验室与洁净环境检测提供可靠支撑。</p>
+          <p>提供麦克微尔便携式尘埃粒子计数器及分光光度计、天平、纯水系统等实验室仪器。</p>
           <span class="card-link">了解详情</span>
         </div>
-      </div>
-      <div class="card">
+      </a>
+      <a class="card" href="product-synthesis.html">
         <div class="card-visual">
           <svg viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="36" cy="44" r="14" stroke="#0055b8" stroke-width="2.5"/>
@@ -369,16 +160,15 @@ ul{list-style:none;}
         </div>
         <div class="card-body">
           <h3>化学合成仪器</h3>
-          <p>提供平行合成反应仪、低温反应系统、旋转蒸发仪等化学合成设备，助力药物化学与工艺研发实验室提升合成效率与安全性。</p>
+          <p>提供平行合成反应仪、低温反应系统、旋转蒸发仪等化学合成设备，助力工艺研发。</p>
           <span class="card-link">了解详情</span>
         </div>
-      </div>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ======= 行业应用 ======= -->
-<section class="section section-alt" id="solutions">
+<section class="section section-alt">
   <div class="container">
     <div class="section-head">
       <div class="kicker">SOLUTIONS</div>
@@ -386,60 +176,26 @@ ul{list-style:none;}
       <p>深耕医药、化工、生物三大行业，理解每一类实验室的真实场景与法规要求。</p>
     </div>
     <div class="grid-3">
-      <div class="industry ind-pharma">
+      <a class="industry ind-pharma" href="solutions.html#pharma">
         <svg class="icon" viewBox="0 0 52 52" fill="none"><rect x="14" y="6" width="24" height="40" rx="12" stroke="#fff" stroke-width="2.5"/><path d="M14 26h24" stroke="#fff" stroke-width="2.5"/><path d="M20 14l12 0" stroke="rgba(255,255,255,.6)" stroke-width="2" stroke-linecap="round"/></svg>
         <h3>医药行业</h3>
-        <p>面向药物研发、QC 质检与注册申报实验室，提供符合 GMP 与药典规范的溶出度、粒度分布等分析检测方案。</p>
-      </div>
-      <div class="industry ind-chem">
+        <p>面向药物研发、QC 质检与注册申报实验室，提供符合 GMP 与药典规范的分析检测方案。</p>
+      </a>
+      <a class="industry ind-chem" href="solutions.html#chem">
         <svg class="icon" viewBox="0 0 52 52" fill="none"><path d="M20 8v12L10 38c-1.5 3 .5 6 3.5 6h25c3 0 5-3 3.5-6L32 20V8" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 8h18" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/></svg>
         <h3>化工行业</h3>
-        <p>为精细化工与新材料企业提供粒度表征、合成反应与理化分析设备，支撑工艺开发、质量控制与产品升级。</p>
-      </div>
-      <div class="industry ind-bio">
+        <p>为精细化工与新材料企业提供粒度表征、合成反应与理化分析设备，支撑工艺开发与质量控制。</p>
+      </a>
+      <a class="industry ind-bio" href="solutions.html#bio">
         <svg class="icon" viewBox="0 0 52 52" fill="none"><path d="M16 6c0 10 20 14 20 24M36 6c0 4-3.5 7-8 9.5M16 46c0-10 20-14 20-24M16 46c0-4 3.5-7 8-9.5" stroke="#fff" stroke-width="2.5" stroke-linecap="round"/><path d="M18 12h16M18 40h16" stroke="rgba(255,255,255,.6)" stroke-width="2" stroke-linecap="round"/></svg>
         <h3>生物行业</h3>
-        <p>服务生物医药与生命科学实验室，提供从样品前处理到分析检测的通用仪器配置方案与技术支持。</p>
-      </div>
+        <p>服务生物医药与生命科学实验室，提供从样品前处理到分析检测的仪器配置方案。</p>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ======= 合作品牌 ======= -->
-<section class="section" id="brands">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">PARTNERS</div>
-      <h2>合作品牌</h2>
-      <p>深入合作全球多家进口品牌，并与优质国产品牌建立长期稳定的合作关系。</p>
-    </div>
-    <div class="brands">
-      <div class="brand">
-        <div class="name">DISTEK</div>
-        <div class="from">美国</div>
-        <p>专业溶出度测试仪器制造商，产品广泛应用于全球制药企业与研究机构。</p>
-      </div>
-      <div class="brand">
-        <div class="name">麦克微尔</div>
-        <div class="from">MicronView</div>
-        <p>专注洁净与受控环境实时监测，便携式尘埃粒子计数器广泛应用于制药洁净室检测。</p>
-      </div>
-      <div class="brand">
-        <div class="name">CILAS</div>
-        <div class="from">法国</div>
-        <p>激光粒度分析技术先驱，五十余年激光衍射粒度测量经验。</p>
-      </div>
-      <div class="brand">
-        <div class="name">国产优质品牌</div>
-        <div class="from">中国</div>
-        <p>精选国内成熟品牌的通用仪器设备，高性价比满足实验室日常需求。</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======= 服务支持 ======= -->
-<section class="section section-alt" id="services">
+<section class="section">
   <div class="container">
     <div class="section-head">
       <div class="kicker">SUPPORT</div>
@@ -468,23 +224,23 @@ ul{list-style:none;}
         <p>快速响应维修需求，提供预防性保养计划，保障仪器长期稳定。</p>
       </div>
     </div>
+    <p style="text-align:center;margin-top:34px;"><a class="btn btn-primary" href="services.html">了解服务详情</a></p>
   </div>
 </section>
 
-<!-- ======= 关于我们 ======= -->
-<section class="section" id="about">
+<section class="section section-alt">
   <div class="container">
     <div class="about-wrap">
       <div class="about-text">
         <div class="kicker">ABOUT US</div>
         <h2>关于东时仪器</h2>
         <p>上海东时仪器科技有限公司成立于 2020 年，位于上海市宝山区泰德科技园。公司致力于为医药、化工、生物等行业提供更高品质的实验室通用仪器设备、更优质的售前售后技术支持。</p>
-        <p>我们深入合作多家优质品牌，包括美国 DISTEK 溶出仪、法国 CILAS 激光粒度仪、麦克微尔便携式尘埃粒子计数器，并与优质国产品牌建立合作关系，为各研发和质量实验室提供丰富的产品选择和专业的技术服务。</p>
         <div class="stats">
           <div class="stat"><div class="num">2020</div><div class="label">公司成立</div></div>
           <div class="stat"><div class="num">200<span>万</span></div><div class="label">注册资本（元）</div></div>
           <div class="stat"><div class="num">4<span>大</span></div><div class="label">产品线布局</div></div>
         </div>
+        <p style="margin-top:24px;"><a class="btn btn-primary" href="about.html">了解更多</a></p>
       </div>
       <div class="about-visual">
         <svg viewBox="0 0 300 220" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -502,8 +258,7 @@ ul{list-style:none;}
   </div>
 </section>
 
-<!-- ======= 新闻动态 ======= -->
-<section class="section section-alt" id="news">
+<section class="section">
   <div class="container">
     <div class="section-head">
       <div class="kicker">NEWS</div>
@@ -511,71 +266,33 @@ ul{list-style:none;}
       <p>了解东时仪器与行业的最新资讯。</p>
     </div>
     <div class="news-grid">
-      <div class="news">
+      <a class="news" href="news.html">
         <div class="date">2026-06</div>
         <h3>东时仪器完成多家药企溶出仪装机与培训服务</h3>
-        <p>近期为长三角多家制药企业完成 DISTEK 溶出仪的安装调试与操作培训，助力客户顺利通过实验室体系审计。</p>
-      </div>
-      <div class="news">
+        <p>近期为长三角多家制药企业完成 DISTEK 溶出仪的安装调试与操作培训。</p>
+      </a>
+      <a class="news" href="news.html">
         <div class="date">2026-04</div>
         <h3>激光粒度仪应用交流：粒度分布在制剂研发中的作用</h3>
-        <p>与客户实验室开展激光衍射粒度测量方法开发的应用交流，分享原辅料粒度控制的实践经验。</p>
-      </div>
-      <div class="news">
+        <p>与客户实验室开展激光衍射粒度测量方法开发的应用交流。</p>
+      </a>
+      <a class="news" href="news.html">
         <div class="date">2026-01</div>
         <h3>东时仪器新年致辞：以专业服务回馈客户信任</h3>
-        <p>感谢广大客户长期以来的支持与信任，新的一年我们将持续提升产品与服务品质，与客户共同成长。</p>
-      </div>
+        <p>感谢广大客户长期以来的支持与信任，新的一年持续提升产品与服务品质。</p>
+      </a>
     </div>
   </div>
 </section>
 
-<!-- ======= CTA ======= -->
 <section class="cta-band">
   <div class="container">
     <h2>需要仪器选型建议或产品报价？</h2>
     <p>欢迎致电或留言，我们的技术团队将在第一时间与您联系。</p>
-    <a class="btn btn-outline" href="#contact" style="border-color:#fff;">立即联系我们</a>
+    <a class="btn btn-outline" href="contact.html" style="border-color:#fff;">立即联系我们</a>
   </div>
 </section>
 
-<!-- ======= 联系我们 ======= -->
-<section class="section" id="contact">
-  <div class="container">
-    <div class="section-head">
-      <div class="kicker">CONTACT</div>
-      <h2>联系我们</h2>
-    </div>
-    <div class="contact-wrap">
-      <div class="contact-info">
-        <h3>联系方式</h3>
-        <div class="contact-item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z" fill="#0055b8"/></svg></div>
-          <div><div class="label">联系电话（周先生）</div><div class="val">136 2186 2093</div></div>
-        </div>
-        <div class="contact-item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2C8 2 5 5.1 5 9c0 5.2 7 13 7 13s7-7.8 7-13c0-3.9-3-7-7-7z" stroke="#0055b8" stroke-width="2"/><circle cx="12" cy="9" r="2.5" stroke="#0055b8" stroke-width="2"/></svg></div>
-          <div><div class="label">公司地址</div><div class="val">上海市宝山区蕰川路516号泰德科技园205M室</div></div>
-        </div>
-        <div class="contact-item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#0055b8" stroke-width="2"/><path d="M3 7l9 6 9-6" stroke="#0055b8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div><div class="label">电子邮箱</div><div class="val">yipeng721@gmail.com</div></div>
-        </div>
-        <div class="contact-item">
-          <div class="ico"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#0055b8" stroke-width="2"/><path d="M12 7v5l3.5 2" stroke="#0055b8" stroke-width="2" stroke-linecap="round"/></svg></div>
-          <div><div class="label">工作时间</div><div class="val">周一至周五 9:00 – 17:30</div></div>
-        </div>
-      </div>
-      <div class="contact-map">
-        <svg viewBox="0 0 64 64" fill="none"><path d="M32 6C22 6 14 14 14 24c0 13 18 34 18 34s18-21 18-34c0-10-8-18-18-18z" stroke="#0055b8" stroke-width="3"/><circle cx="32" cy="24" r="7" stroke="#0055b8" stroke-width="3"/></svg>
-        <div class="addr">上海市宝山区蕰川路516号<br>泰德科技园 205M 室</div>
-        <p>邻近沪太路 / 蕰川路交通干道，欢迎来访洽谈</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ======= 页脚 ======= -->
 <footer class="footer">
   <div class="container footer-main">
     <div>
@@ -588,19 +305,19 @@ ul{list-style:none;}
     <div>
       <h4>产品中心</h4>
       <ul>
-        <li><a href="#products">溶出仪</a></li>
-        <li><a href="#products">激光粒度仪</a></li>
-        <li><a href="#products">实验室通用仪器</a></li>
-        <li><a href="#products">化学合成仪器</a></li>
+        <li><a href="product-dissolution.html">溶出仪</a></li>
+        <li><a href="product-particle.html">激光粒度仪</a></li>
+        <li><a href="product-lab.html">实验室通用仪器</a></li>
+        <li><a href="product-synthesis.html">化学合成仪器</a></li>
       </ul>
     </div>
     <div>
       <h4>快速链接</h4>
       <ul>
-        <li><a href="#about">关于我们</a></li>
-        <li><a href="#brands">合作品牌</a></li>
-        <li><a href="#services">服务支持</a></li>
-        <li><a href="#news">新闻动态</a></li>
+        <li><a href="about.html">关于我们</a></li>
+        <li><a href="solutions.html">行业应用</a></li>
+        <li><a href="services.html">服务支持</a></li>
+        <li><a href="news.html">新闻动态</a></li>
       </ul>
     </div>
     <div>
@@ -619,63 +336,6 @@ ul{list-style:none;}
 </footer>
 
 <button id="toTop" aria-label="回到顶部">↑</button>
-
-<script>
-// ===== Hero 轮播 =====
-(function(){
-  var slides = document.getElementById('slides');
-  var count = slides.children.length;
-  var idx = 0, timer;
-  var dotsWrap = document.getElementById('dots');
-  for (var i = 0; i < count; i++) {
-    var b = document.createElement('button');
-    b.dataset.i = i;
-    b.addEventListener('click', function(){ go(+this.dataset.i); });
-    dotsWrap.appendChild(b);
-  }
-  function render(){
-    slides.style.transform = 'translateX(-' + idx * 100 + '%)';
-    var dots = dotsWrap.children;
-    for (var i = 0; i < dots.length; i++) dots[i].className = i === idx ? 'on' : '';
-  }
-  function go(i){ idx = (i + count) % count; render(); restart(); }
-  function restart(){ clearInterval(timer); timer = setInterval(function(){ go(idx + 1); }, 6000); }
-  document.getElementById('prevBtn').addEventListener('click', function(){ go(idx - 1); });
-  document.getElementById('nextBtn').addEventListener('click', function(){ go(idx + 1); });
-  render(); restart();
-})();
-
-// ===== 移动端菜单 =====
-(function(){
-  var nav = document.getElementById('mainNav');
-  document.getElementById('hamburger').addEventListener('click', function(){
-    nav.classList.toggle('open');
-  });
-  nav.addEventListener('click', function(e){
-    if (e.target.tagName === 'A') nav.classList.remove('open');
-  });
-})();
-
-// ===== 导航高亮 & 回到顶部 =====
-(function(){
-  var links = document.querySelectorAll('.nav>li>a[href^="#"]');
-  var toTop = document.getElementById('toTop');
-  var sections = [];
-  links.forEach(function(a){
-    var id = a.getAttribute('href').slice(1);
-    var el = document.getElementById(id);
-    if (el) sections.push({ id: id, el: el, a: a });
-  });
-  window.addEventListener('scroll', function(){
-    toTop.classList.toggle('show', window.scrollY > 500);
-    var pos = window.scrollY + 120;
-    var current = sections[0];
-    sections.forEach(function(s){ if (s.el.offsetTop <= pos) current = s; });
-    links.forEach(function(a){ a.classList.remove('active'); });
-    if (current) current.a.classList.add('active');
-  }, { passive: true });
-  toTop.addEventListener('click', function(){ window.scrollTo({ top: 0, behavior: 'smooth' }); });
-})();
-</script>
+<script src="js/main.js"></script>
 </body>
 </html>
